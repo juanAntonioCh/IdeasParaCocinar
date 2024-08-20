@@ -1,0 +1,160 @@
+img{
+    width: 600px;
+    height: 350px;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: gold;
+    padding: 14px 16px;
+    
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+  
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav{
+    padding-bottom: 33px;
+}
+
+
+.home{
+    background-color: #111;
+}
+
+
+
+article div img{
+    width: 200px;
+    height: 200px;
+}
+
+#recetas{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+}
+
+#recetas a{
+    color: goldenrod;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+#recetas a:hover h3{
+    color: rgb(121, 121, 226);
+    text-decoration: underline;
+    font-size: 21px;
+    
+}
+
+#recetas a:hover img{
+    box-shadow: rgb(250, 227, 96, 1) 3px 4px 2px;
+	border-radius: 10px;
+}
+
+
+article div a{
+    padding-right: 150px;  
+}
+
+
+#title{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: xx-large;
+}
+
+
+section{
+    display: flex;
+    justify-content: center ;
+    justify-content: space-around;
+}
+
+.consejo a{
+    text-decoration: none;
+    color: rgb(140, 150, 240);
+}
+
+.consejo a:hover{
+    text-decoration: underline;
+    color: navy
+}
+
+.about{
+    max-width: 400px;
+}
+.about h2{
+    text-align: center;
+}
+
+.about p{
+    letter-spacing: 1.5px;
+    line-height: 25px;
+}
+
+footer{
+    background-color: #ffce4e;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    margin-top: 60px;
+}
+
+@media (width <= 1150px){
+    #recetas{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+    
+    }
+}
+
+@media (width <= 820px){
+    #recetas{
+        grid-template-columns: 200px;
+    
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        flex-direction: column; 
+        align-items: center;  
+    }
+    nav ul li {
+        padding-bottom: 20px;   
+    }
+
+}
+

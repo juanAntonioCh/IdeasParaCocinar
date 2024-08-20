@@ -1,0 +1,130 @@
+img {
+    width: 600px;
+    height: 350px;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: gold;
+    padding: 14px 16px;
+
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+nav {
+    padding-bottom: 50px;
+}
+
+
+.tips {
+    background-color: #111;
+}
+
+.consejos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 200px;
+}
+
+a img {
+    padding-bottom: 50px;
+    height: 500px;
+    width: 450px;
+}
+
+.mango, .tomate{
+    position: relative;
+    width: 300px;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+section img:hover{
+    opacity: 0.7;
+
+}
+
+footer{
+    background-color: #ffce4e;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    margin-top: 60px;
+}
+
+@media (width <= 1350px) {
+    .mango{
+        padding-right: 100px;
+    }
+    .tomate{
+        padding-left: 100px;
+    }
+}
+
+@media (width <= 887px) {
+    .consejos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tomate{
+        padding-right: 200px;
+    }
+    .texto-superpuesto {
+        top: 40%;
+        left: 60%;
+    }
+
+}
+
+@media (width <= 640px) {
+    ul {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    nav ul li {
+        padding-bottom: 20px;   
+    }
+    .consejos{
+        padding-left: 150px;
+    }
+
+
+}
